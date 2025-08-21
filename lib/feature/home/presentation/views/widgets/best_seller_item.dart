@@ -1,5 +1,6 @@
 import 'package:book_app/core/assets.dart';
 import 'package:book_app/core/style.dart';
+import 'package:book_app/feature/home/presentation/views/widgets/ratting_item.dart';
 import 'package:flutter/material.dart';
 //import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -67,33 +68,6 @@ class BestSellerListViewItem extends StatelessWidget {
           )
         ],
       ),
-    );
-  }
-}
-
-class RattingItem extends StatelessWidget {
-  const RattingItem({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Row(
-      children: [
-        Icon(
-          Icons.star_border,
-          color: Color(0xffFFDD4F),
-        ),
-        SizedBox(
-          width: 4,
-        ),
-        Text(
-          '4.8',
-          style: Style.textStyle18,
-        ),
-        SizedBox(
-          width: 4,
-        ),
-        Text('(2222)', style: Style.textStyle16)
-      ],
     );
   }
 }
